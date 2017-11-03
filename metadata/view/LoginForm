@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userAlias": "loginform",
         "designer|userClassName": "LoginForm",
-        "height": 200,
+        "height": 400,
         "itemId": null,
         "manageHeight": false,
         "modal": true,
@@ -111,7 +111,33 @@
                         "name": "string"
                     },
                     "name": "MyTextField1",
-                    "designerId": "c5d89fa0-3a6d-4d3c-a297-f06afe08acb1"
+                    "designerId": "c5d89fa0-3a6d-4d3c-a297-f06afe08acb1",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTextfieldRender",
+                                "implHandler": [
+                                    "console.info('Esto es un mensaje');"
+                                ],
+                                "name": "render",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTextfieldRender",
+                            "designerId": "42f9d526-3257-4fcb-8846-c44a85c89d1c"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.button.Button",
@@ -198,6 +224,40 @@
                             "designerId": "c1d04818-1800-4d0f-aba8-385a64214bbe"
                         }
                     ]
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "layout|anchor": "100%"
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "layout|anchor": "string"
+                    },
+                    "name": "MyNumberField",
+                    "designerId": "3995cda8-0a99-4dd0-adb9-7c14ca668613"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label"
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string"
+                    },
+                    "name": "MyDateField",
+                    "designerId": "9f457ebb-8124-4567-b0b2-43df5ef729e8"
                 }
             ]
         }

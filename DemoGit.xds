@@ -14,7 +14,7 @@
                 "width": null
             }
         },
-        "urlPrefix": "http://localhost:55564/",
+        "urlPrefix": "http://localhost:55599/",
         "exportPath": "",
         "lockUrlPrefix": true,
         "buildShouldOverwriteIndex": true,

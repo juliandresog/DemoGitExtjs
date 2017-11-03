@@ -21,8 +21,9 @@ Ext.define('LoginRegister.view.LoginForm', {
         'LoginRegister.view.LoginFormViewModel',
         'LoginRegister.view.LoginFormViewController',
         'Ext.form.Panel',
-        'Ext.form.field.Text',
-        'Ext.button.Button'
+        'Ext.button.Button',
+        'Ext.form.field.Number',
+        'Ext.form.field.Date'
     ],
 
     controller: 'loginform',
@@ -30,7 +31,7 @@ Ext.define('LoginRegister.view.LoginForm', {
         type: 'loginform'
     },
     modal: true,
-    height: 200,
+    height: 400,
     shrinkWrap: 3,
     manageHeight: false,
     title: 'Login',
@@ -60,7 +61,10 @@ Ext.define('LoginRegister.view.LoginForm', {
                     name: 'password',
                     inputType: 'password',
                     allowBlank: false,
-                    blankText: 'Enter your password.'
+                    blankText: 'Enter your password.',
+                    listeners: {
+                        render: 'onTextfieldRender'
+                    }
                 },
                 {
                     xtype: 'button',
@@ -71,6 +75,15 @@ Ext.define('LoginRegister.view.LoginForm', {
                     listeners: {
                         click: 'onLoginButtonClick'
                     }
+                },
+                {
+                    xtype: 'numberfield',
+                    anchor: '100%',
+                    fieldLabel: 'Label'
+                },
+                {
+                    xtype: 'datefield',
+                    fieldLabel: 'Label'
                 }
             ]
         }

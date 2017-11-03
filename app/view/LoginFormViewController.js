@@ -17,6 +17,10 @@ Ext.define('LoginRegister.view.LoginFormViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.loginform',
 
+    onTextfieldRender: function(component, eOpts) {
+        console.info('Esto es un mensaje');
+    },
+
     onLoginButtonClick: function(button, e, eOpts) {
         var view = this.getView(),
             form = button.up('form'),
