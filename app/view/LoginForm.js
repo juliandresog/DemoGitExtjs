@@ -84,6 +84,10 @@ Ext.define('LoginRegister.view.LoginForm', {
                 {
                     xtype: 'datefield',
                     fieldLabel: 'Label'
+                },
+                {
+                    xtype: 'datefield',
+                    fieldLabel: 'Label'
                 }
             ]
         }

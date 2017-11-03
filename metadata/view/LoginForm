@@ -258,6 +258,22 @@
                     },
                     "name": "MyDateField",
                     "designerId": "9f457ebb-8124-4567-b0b2-43df5ef729e8"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label"
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string"
+                    },
+                    "name": "MyDateField1",
+                    "designerId": "d4d6f788-04a9-47e7-9a53-93fcd9750846"
                 }
             ]
         }
