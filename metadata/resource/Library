@@ -8,12 +8,16 @@
     "userConfig": {
         "basePath": "ext/build/",
         "designer|userClassName": "Library",
+        "libraryRequires": [
+            "calendar"
+        ],
         "theme": "MyTritonTheme"
     },
     "configAlternates": {
         "basePath": "uri",
         "designer|userClassName": "string",
-        "theme": "string"
+        "theme": "string",
+        "libraryRequires": "typedarray"
     },
     "designerId": "21d39171-39d0-4171-bbaf-901980656599"
 }

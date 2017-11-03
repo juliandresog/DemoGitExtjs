@@ -23,7 +23,11 @@ Ext.define('LoginRegister.view.LoginForm', {
         'Ext.form.Panel',
         'Ext.button.Button',
         'Ext.form.field.Number',
-        'Ext.form.field.Date'
+        'Ext.form.field.Date',
+        'Ext.form.CheckboxGroup',
+        'Ext.form.field.Checkbox',
+        'Ext.calendar.panel.Day',
+        'Ext.calendar.panel.Month'
     ],
 
     controller: 'loginform',
@@ -88,8 +92,32 @@ Ext.define('LoginRegister.view.LoginForm', {
                 {
                     xtype: 'datefield',
                     fieldLabel: 'Label'
+                },
+                {
+                    xtype: 'checkboxgroup',
+                    fieldLabel: 'Label',
+                    items: [
+                        {
+                            xtype: 'checkboxfield',
+                            boxLabel: 'Box Label'
+                        },
+                        {
+                            xtype: 'checkboxfield',
+                            boxLabel: 'Box Label'
+                        }
+                    ]
                 }
-            ]
+            ],
+            views: {
+                day: {
+                    xtype: 'calendar-day',
+                    label: 'Day'
+                },
+                month: {
+                    xtype: 'calendar-month',
+                    label: 'Month'
+                }
+            }
         }
     ]
 
