@@ -274,6 +274,92 @@
                     },
                     "name": "MyDateField1",
                     "designerId": "d4d6f788-04a9-47e7-9a53-93fcd9750846"
+                },
+                {
+                    "type": "Ext.form.CheckboxGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label"
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string"
+                    },
+                    "name": "MyCheckboxGroup",
+                    "designerId": "f1c53910-122c-43ab-affa-810b6d04800a",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "Box Label",
+                                "fieldLabel": null
+                            },
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "fieldLabel": "string"
+                            },
+                            "name": "MyCheckbox",
+                            "designerId": "e3b0f81c-b568-4472-88fd-f22888f8a884"
+                        },
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "Box Label",
+                                "fieldLabel": null
+                            },
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "fieldLabel": "string"
+                            },
+                            "name": "MyCheckbox1",
+                            "designerId": "74035778-0e61-452b-b408-59f7403b56fa"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.calendar.panel.Day",
+                    "reference": {
+                        "name": "views",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Day"
+                    },
+                    "configAlternates": {
+                        "label": "string"
+                    },
+                    "name": "MyDay",
+                    "designerId": "6c1df844-9405-448f-955f-a780ec51990e"
+                },
+                {
+                    "type": "Ext.calendar.panel.Month",
+                    "reference": {
+                        "name": "views",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Month"
+                    },
+                    "configAlternates": {
+                        "label": "string"
+                    },
+                    "name": "MyMonth",
+                    "designerId": "877a1e77-3e1d-4cbd-a9e7-3b309d22bfcd"
                 }
             ]
         }
